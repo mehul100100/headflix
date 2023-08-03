@@ -1,11 +1,4 @@
 import React, { useState, useCallback } from "react";
-import Link from "next/link";
-import { signIn } from "next-auth/react";
-import axios from "axios";
-
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
-import { useRouter } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import AuthContent from "@/components/AuthContent";
