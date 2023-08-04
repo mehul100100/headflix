@@ -16,7 +16,7 @@ const MovieListItem = ({ movies }: { movies: any }) => {
       {movies.map((movie: any) => (
         <div
           key={movie.id}
-          className="min-w-[200px] lg:max-w-[250px] relative cursor-pointer z-20 hover:scale-125 transition"
+          className="min-w-[200px] lg:max-w-[250px] relative cursor-pointer group z-20 hover:scale-125 transition"
         >
           <img
             src={movie.thumbnailUrl}
@@ -24,7 +24,7 @@ const MovieListItem = ({ movies }: { movies: any }) => {
             className="rounded-lg w-full h-full object-cover"
           />
 
-          <div className="opacity-0 flex flex-col absolute bottom-[10%] left-[15%] space-y-2 hover:opacity-100 transition">
+          <div className="opacity-0 flex flex-col absolute bottom-[10%] left-[15%] space-y-2 group-hover:opacity-100 transition">
             <div className="flex flex-row space-x-2">
               <PlayButton movieId={movie?.id} />
               <FavoriteButton movieId={movie?.id} />
