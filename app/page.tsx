@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Billboard from "@/components/Billboard";
 import MovieList from "@/components/MovieList";
 import FavoriteList from "@/components/FavoriteList";
+import Footer from "@/components/Footer";
 
 export default async function Home() {
   const user = await getCurrentUser();
@@ -20,6 +21,7 @@ export default async function Home() {
         <MovieList />
 
         <FavoriteList />
+        <Footer />
       </div>
     </>
   );
